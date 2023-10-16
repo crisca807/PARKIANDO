@@ -1,16 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { FirstApp } from './firtsApp';
-
-//import { firstApp } from './firtsApp';
-FirstApp
-
+import { FourthApp } from './FourthApp';
+FourthApp
 
 
 
 
 ReactDOM.createRoot( document.getElementById('root') ).render(
     <React.StrictMode>
-        <FirstApp/>
+        <FourthApp/>
     </React.StrictMode>
 );

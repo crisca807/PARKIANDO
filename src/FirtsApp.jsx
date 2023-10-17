@@ -1,28 +1,26 @@
-export const FirstApp = () => {
-    const data = [
-      { id: 1, name: 'John', age: 30 },
-      { id: 2, name: 'Jane', age: 25 },
-      { id: 3, name: 'Bob', age: 35 },
-    ];
+import  PropTypes  from 'prop-types';
+export const FirstApp = ( {title, subTitle , name } ) => {
   
-    return (
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Nombre</th>
-            <th>Edad</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map((item) => (
-            <tr key={item.id}>
-              <td>{item.id}</td>
-              <td>{item.name}</td>
-              <td>{item.age}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    );
-  }
+  //console.log(props);
+
+  return (
+    <>
+
+      <h1>{title }</h1>
+      <p>{subTitle}</p>
+      <p>{name}</p>
+    </>
+  )
+}
+
+FirstApp.propTypes = { 
+  title: PropTypes.string.isRequired,
+  subTitle: PropTypes.number,
+}
+
+FirstApp.defaultProps = { 
+  name: 'cristansho',
+  title: 'No hay titulo',
+  subTitle: 'No hay subtitulo'
+}
+

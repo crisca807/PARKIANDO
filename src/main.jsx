@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { FirstApp } from './firtsApp';
-
-//import { firstApp } from './firtsApp';
-FirstApp
+import { CounterApp } from './CounterApp';
 
 
+CounterApp
+
+
+import'./styles.css';
 
 
 
 ReactDOM.createRoot( document.getElementById('root') ).render(
     <React.StrictMode>
-        <FirstApp/>
+        <CounterApp/>
     </React.StrictMode>
 );
